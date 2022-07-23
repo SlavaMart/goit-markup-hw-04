@@ -89,12 +89,15 @@ ul {
     padding-bottom: 32px;
 } */
 
+.header {
+    border-bottom: 1px solid var(--line-cl)
+}
 
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--line-cl)
-        /* padding-top: 32px;
+
+    /* padding-top: 32px;
     padding-bottom: 32px; */
 }
 
@@ -154,6 +157,7 @@ ul {
     color: #757575;
     padding-top: 32px;
     padding-bottom: 32px;
+
 }
 
 .header-mail {
@@ -162,6 +166,23 @@ ul {
 
 .header-mail:last-child {
     margin-right: 0px;
+}
+
+.header-mail-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    border-radius: 4px;
+    color: #AFB1B8;
+
+}
+
+.header-mail-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -182,6 +203,16 @@ ul {
 /* Hero section */
 
 .hero {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/hero/background.jpg);
+    background-image: linear-gradient(rgba (47, 48, 58, 0.4),
+            rgba (47, 48, 58, 0.4));
+
+    background-repeat: no-repeat;
+    background-position: center;
+
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -190,7 +221,7 @@ ul {
     left: 0px;
     top: 80px;
 
-    background: var(--dark-bg-cl);
+
 
 }
 
@@ -240,6 +271,103 @@ ul {
 .peculiarities {
     padding-top: 94px;
 }
+
+.peculiartes-item-txt {
+    margin-top: 30px;
+}
+
+/* Начало Отличий */
+
+
+.peculiarities-list-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.peculiarities-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+
+    border-radius: 4px;
+    color: #AFB1B8;
+    background-color: #F5F4FA;
+}
+
+
+
+/* Конец Отличий */
+
+
+
+
+
+
+/*Удалить*/
+
+.container-clients {
+    margin-top: 94px;
+    margin-bottom: 94px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+.clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+}
+
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    background-color: E5E5E5;
+
+
+
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: #2196F3;
+    border-color: #2196F3;
+
+}
+
+
+.clients-icon {
+    fill: currentColor;
+}
+
+/* Удалить */
+
+
+
 
 .peculiarities-list {
     display: flex;
@@ -308,6 +436,7 @@ ul {
     padding-bottom: 94px;
 }
 
+
 .team-list {
     margin-top: 50px;
     display: flex;
@@ -323,36 +452,31 @@ ul {
 .team-item:nth-child(1) {
     background-color: var(--cards-cl);
     width: 270px;
-    height: 368px;
+
 }
 
 .team-item:nth-child(2) {
     background-color: var(--cards-cl);
     width: 270px;
-    height: 368px;
 }
 
 .team-item:nth-child(2) {
     background-color: var(--cards-cl);
     width: 270px;
-    height: 368px;
 }
 
 .team-item:nth-child(3) {
     background-color: var(--cards-cl);
     width: 270px;
-    height: 368px;
 }
 
 .team-item:nth-child(4) {
     background-color: var(--cards-cl);
     width: 270px;
-    height: 368px;
 }
 
 .team-item-txt {
     padding-top: 30px;
-
     padding-bottom: 30px;
 
 }
@@ -383,6 +507,7 @@ ul {
 }
 
 .team-desc {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: calc(19 / 16);
     /* identical to box height */
@@ -391,6 +516,63 @@ ul {
     color: var(--contct-txt-cl);
     padding-top: 10px;
 }
+
+
+/* Clients */
+.container-clients {
+    margin-top: 94px;
+    margin-bottom: 94px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+.clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+}
+
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    background-color: E5E5E5;
+
+
+
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: #2196F3;
+    border-color: #2196F3;
+
+}
+
+
+.clients-icon {
+    fill: currentColor;
+}
+
 
 /* Footer*/
 
@@ -430,6 +612,88 @@ ul {
     color: var(--white-txt-cl);
 }
 
+
+
+.join {
+    color: #EEEEEE;
+
+}
+
+
+
+.footer-group {
+    display: flex;
+}
+
+.footer-group {
+    flex-basis: 50%;
+}
+
+
+
+
+/* .footer-social-subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-txt-cl);
+} */
+
+/* 
+Socials icons
+*/
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.socials-icon {
+    fill: #AFB1B8;
+
+
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: #AFB1B8;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    outline: 2px solid #FFFFFF;
+
+}
+
+
+.socials-link:hover,
+.socials-link:focus {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+.socials-icon {
+    fill: currentColor;
+}
+
+/* .socials-link:hover {
+    background-color: #2196F3;
+
+}
+
+.socials-link:hover .socials-icon {
+    fill: #FFFFFF;
+} */
+
 /* Portfolio*/
 
 .filter {
@@ -455,9 +719,6 @@ ul {
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
-
-
-
 
     background: var(--ligh-bg-cl);
     border-radius: 4px;
@@ -527,6 +788,7 @@ ul {
 .examples-list {
     padding-bottom: 94px;
 }
+
 
 .visually-hidden {
     position: absolute;
