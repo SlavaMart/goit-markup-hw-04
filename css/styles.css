@@ -173,8 +173,11 @@ ul {
     align-items: center;
     justify-content: center;
 
-
 }
+
+
+
+.mail-link:hover {}
 
 .header-mail-container {
     display: flex;
@@ -236,7 +239,7 @@ ul {
 
 .header-mail-icon {
     margin-right: 10px;
-    fill: var(--contct-txt-cl);
+    fill: currentColor;
 }
 
 .contact:hover,
